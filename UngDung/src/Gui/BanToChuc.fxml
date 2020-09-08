@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.BanToChucController">
+   <children>
+      <TabPane fx:id="tab" layoutX="1.0" layoutY="84.0" prefHeight="516.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Ứng cử viên">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="466.0" prefWidth="906.0">
+                     <children>
+                        <TableView fx:id="ucvTable" layoutY="59.0" prefHeight="266.0" prefWidth="1000.0">
+                           <columns>
+                              <TableColumn fx:id="maUCV" prefWidth="160.79999387264252" text="Mã ứng cử viên" />
+                              <TableColumn fx:id="tenUCV" prefWidth="480.7999572753906" text="Họ tên" />
+                              <TableColumn fx:id="phaiUCV" prefWidth="180.79998779296875" text="Phái" />
+                              <TableColumn fx:id="ngaySinhUCV" prefWidth="175.199951171875" text="Ngày sinh" />
+                           </columns>
+                        </TableView>
+                        <Text layoutX="345.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách ứng cử viên">
+                           <font>
+                              <Font size="31.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="suaUCV" layoutX="345.0" layoutY="350.0" mnemonicParsing="false" text="Sửa">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="632.0" layoutY="350.0" mnemonicParsing="false" text="Xóa" fx:id="xoaUCV">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Tổ lập danh sách bình bầu">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="lapDSTable" layoutY="59.0" prefHeight="266.0" prefWidth="1000.0">
+                           <columns>
+                              <TableColumn fx:id="maLDS" prefWidth="112.79998469352722" text="Mã người lập" />
+                              <TableColumn fx:id="tenLDS" prefWidth="394.40001678466797" text="Họ tên" />
+                              <TableColumn fx:id="phaiLDS" minWidth="0.0" prefWidth="195.99996948242188" text="Phái" />
+                              <TableColumn fx:id="ngaySinhLDS" prefWidth="180.00006103515625" text="Ngày sinh" />
+                              <TableColumn fx:id="donviLDS" prefWidth="112.800048828125" text="Đơn vị" />
+                           </columns>
+                        </TableView>
+                        <Text layoutX="293.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổ lập danh sách người đi bầu">
+                           <font>
+                              <Font size="31.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="suaLDS" layoutX="345.0" layoutY="350.0" mnemonicParsing="false" text="Sửa">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="632.0" layoutY="350.0" mnemonicParsing="false" text="Xóa" fx:id="xoaLDS">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Tổ theo dõi kết quả">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="428.0" prefWidth="814.0">
+                     <children>
+                        <TableView fx:id="theoDoiTable" layoutY="59.0" prefHeight="266.0" prefWidth="1000.0">
+                           <columns>
+                              <TableColumn fx:id="maTDKQ" prefWidth="186.39999997615814" text="Mã người theo dõi" />
+                              <TableColumn fx:id="tenTDKQ" prefWidth="453.5999755859375" text="Họ tên" />
+                              <TableColumn fx:id="phaiTDKQ" prefWidth="180.79998779296875" text="Phái" />
+                              <TableColumn fx:id="ngaySinhTDKQ" prefWidth="175.199951171875" text="Ngày sinh" />
+                           </columns>
+                        </TableView>
+                        <Text layoutX="366.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổ theo dõi kết quả">
+                           <font>
+                              <Font size="31.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="suaTDKQ" layoutX="345.0" layoutY="350.0" mnemonicParsing="false" text="Sửa">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="632.0" layoutY="350.0" mnemonicParsing="false" text="Xóa" fx:id="xoaTDKQ">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Tổ giám sát">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="giamSatTable" layoutY="59.0" prefHeight="266.0" prefWidth="1000.0">
+                           <columns>
+                              <TableColumn fx:id="maGS" prefWidth="198.39999997615814" text="Mã người giám sát" />
+                              <TableColumn fx:id="tenGS" prefWidth="442.39996337890625" text="Họ tên" />
+                              <TableColumn fx:id="phaiGS" prefWidth="180.79998779296875" text="Phái" />
+                              <TableColumn fx:id="ngaySinhGS" prefWidth="176.7999267578125" text="Ngày sinh" />
+                           </columns>
+                        </TableView>
+                        <Text layoutX="420.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổ giám sát">
+                           <font>
+                              <Font size="31.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="suaGS" layoutX="345.0" layoutY="350.0" mnemonicParsing="false" text="Sửa">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="632.0" layoutY="350.0" mnemonicParsing="false" text="Xóa" fx:id="xoaGS">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Button fx:id="home" layoutX="910.0" layoutY="31.0" mnemonicParsing="false" text="HOME" />
+   </children>
+</AnchorPane>

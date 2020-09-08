@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.GrantRevokeController">
+   <children>
+      <Text layoutX="438.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grant / Revoke">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Label layoutX="28.0" layoutY="90.0" prefHeight="27.0" prefWidth="150.0" text="Chức năng">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="57.0" layoutY="158.0" />
+      <Label layoutX="24.0" layoutY="428.0" text="Cấp cho ">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="btn_Delete" layoutX="442.0" layoutY="533.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="89.0" text="Delete">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btn_Insert" layoutX="561.0" layoutY="533.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="101.0" text="Insert" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <RadioButton fx:id="rdo_Grant" layoutX="328.0" layoutY="136.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="134.0" selected="true" text="Grant">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rdo_Revoke" layoutX="450.0" layoutY="136.0" mnemonicParsing="false" text="Revoke" toggleGroup="$group">
+         <font>
+            <Font size="18.0" />
+         </font></RadioButton>
+      <CheckBox fx:id="cb_CoQuyenCapQuyen" layoutX="636.0" layoutY="433.0" mnemonicParsing="false" text="Có quyền cấp quyền">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="btn_Select" layoutX="692.0" layoutY="533.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="85.0" text="Select">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_Update" layoutX="805.0" layoutY="533.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" text="Update">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="rdo_ThanhVien" layoutX="57.0" layoutY="197.0" mnemonicParsing="false" selected="true" text="Thành viên" />
+      <TextField fx:id="edt_RU" layoutX="317.0" layoutY="426.0" />
+      <FlowPane fx:id="fl_ThanhVien" layoutX="77.0" layoutY="226.0" prefHeight="159.0" prefWidth="94.0">
+         <children>
+            <CheckBox fx:id="cb_tv_Ten" mnemonicParsing="false" text="Tên" />
+            <CheckBox fx:id="cb_tv_phai" mnemonicParsing="false" text="Phái" />
+            <CheckBox fx:id="cb_tv_NgaySinh" mnemonicParsing="false" text="Quê quán" />
+            <CheckBox fx:id="cb_tv_QuocTich" mnemonicParsing="false" text="Quốc tịch" />
+            <CheckBox fx:id="cb_tv_QueQuan" mnemonicParsing="false" text="ĐCThTrú" />
+            <CheckBox fx:id="cb_tv_Ten1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="ĐcTTrú" />
+            <CheckBox mnemonicParsing="false" text="Được bầu" />
+         </children>
+      </FlowPane>
+      <RadioButton fx:id="rdo_Role" layoutX="106.0" layoutY="431.0" mnemonicParsing="false" text="Role" />
+      <RadioButton fx:id="rdo_User" layoutX="196.0" layoutY="431.0" mnemonicParsing="false" selected="true" text="User" />
+      <Button fx:id="home" layoutX="911.0" layoutY="20.0" mnemonicParsing="false" text="HOME" />
+      <RadioButton fx:id="rdo_LapDanhSachDiBau" layoutX="224.0" layoutY="197.0" mnemonicParsing="false" text="Tổ Lập danh sách đi bầu" />
+      <FlowPane fx:id="fl_LapDanhSachDiBau" layoutX="248.0" layoutY="228.0" prefHeight="83.0" prefWidth="90.0">
+         <children>
+            <CheckBox mnemonicParsing="false" text="Họ tên" />
+            <CheckBox mnemonicParsing="false" text="Phái" />
+            <CheckBox mnemonicParsing="false" text="Ngày sinh" />
+            <CheckBox mnemonicParsing="false" text="Mã đv" />
+         </children>
+      </FlowPane>
+      <RadioButton fx:id="rdo_BTC" layoutX="449.0" layoutY="197.0" mnemonicParsing="false" text="Ban tổ chức" />
+      <FlowPane fx:id="fl_BTC" layoutX="470.0" layoutY="227.0" prefHeight="200.0" prefWidth="110.0">
+         <children>
+            <CheckBox mnemonicParsing="false" text="Họ tên" />
+            <CheckBox mnemonicParsing="false" text="Phái" />
+            <CheckBox mnemonicParsing="false" text="Ngày sinh" />
+         </children>
+      </FlowPane>
+      <RadioButton fx:id="rdo_ToTheoDoi" layoutX="607.0" layoutY="197.0" mnemonicParsing="false" text="Tổ theo dõi" />
+      <FlowPane fx:id="fl_ToTheoDoi" layoutX="632.0" layoutY="226.0" prefHeight="192.0" prefWidth="110.0">
+         <children>
+            <CheckBox mnemonicParsing="false" text="Họ tên" />
+            <CheckBox mnemonicParsing="false" text="Phái" />
+            <CheckBox mnemonicParsing="false" text="Ngày sinh" />
+         </children>
+      </FlowPane>
+      <RadioButton fx:id="rdo_ToGiamSat" layoutX="777.0" layoutY="197.0" mnemonicParsing="false" text="Tổ giám sat" />
+      <FlowPane fx:id="fl_ToGiamSat" layoutX="804.0" layoutY="226.0" prefHeight="192.0" prefWidth="119.0">
+         <children>
+            <CheckBox mnemonicParsing="false" text="Họ tên" />
+            <CheckBox mnemonicParsing="false" text="Phái" />
+            <CheckBox mnemonicParsing="false" text="Ngày sinh" />
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

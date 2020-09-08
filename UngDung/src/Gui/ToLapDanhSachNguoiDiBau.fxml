@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.ToLapDanhSachNguoiDiBauController">
+   <children>
+      <TableView fx:id="userTable" layoutX="2.0" layoutY="78.0" prefHeight="400.0" prefWidth="1000.0">
+         <columns>
+            <TableColumn fx:id="tbc_Username" prefWidth="78.0" text="Username" />
+            <TableColumn fx:id="tbc_HoTen" prefWidth="150.0" text="Họ tên" />
+            <TableColumn fx:id="tbc_Phai" minWidth="0.0" prefWidth="51.0" text="Phái " />
+            <TableColumn fx:id="tbc_QueQuan" minWidth="0.0" prefWidth="122.0" text="Quê quán" />
+            <TableColumn fx:id="tbc_NgaySinh" prefWidth="91.0" text="Ngày sinh " />
+            <TableColumn fx:id="tbc_QuocTich" prefWidth="81.0" text="Quốc tịch " />
+            <TableColumn fx:id="tbc_DCThuongTru" prefWidth="124.0" text="Đc thường trú" />
+            <TableColumn fx:id="tbc_DcTamTru" prefWidth="117.0" text="Đc tạm trú " />
+            <TableColumn fx:id="tbc_TrangThai" minWidth="7.0" prefWidth="82.0" text="Trạng Thái" />
+            <TableColumn fx:id="tbc_Action" minWidth="0.0" prefWidth="103.0" text="Ko Được Bầu " />
+         </columns>
+      </TableView>
+      <Text layoutX="340.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách người đi bầu">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_QuayVe" layoutX="886.0" layoutY="23.0" mnemonicParsing="false" text="Home">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btn_ApDung" layoutX="869.0" layoutY="526.0" mnemonicParsing="false" text="Áp dụng ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_LocTrangThai" layoutX="566.0" layoutY="526.0" mnemonicParsing="false" text="Lọc trạng thái">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_LocDuocBau" layoutX="718.0" layoutY="526.0" mnemonicParsing="false" text="Lọc được bầu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_Edit" layoutX="475.0" layoutY="526.0" mnemonicParsing="false" text="Edit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

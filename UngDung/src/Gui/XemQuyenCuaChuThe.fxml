@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.XemQuyenCuaChuTheController">
+   <children>
+      <Text layoutX="400.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xem quyền của chủ thể">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutY="89.0" prefHeight="379.0" prefWidth="1000.0">
+         <columns>
+            <TableColumn fx:id="username_col" prefWidth="170.0" text="Username/Role" />
+            <TableColumn fx:id="loaiquyen_col" prefWidth="155.0" text="Loại quyền" />
+            <TableColumn fx:id="privilege_col" prefWidth="151.0" text="Quyền" />
+            <TableColumn fx:id="table_col" prefWidth="124.0" text="Bảng" />
+            <TableColumn fx:id="cot_col" prefWidth="150.0" text="Cột" />
+            <TableColumn fx:id="owner_col" prefWidth="150.0" text="Người sở hữu" />
+            <TableColumn fx:id="ad_col" prefWidth="100.0" text="AD" />
+         </columns>
+      </TableView>
+      <Text layoutX="45.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" />
+      <TextField fx:id="username_input" layoutX="120.0" layoutY="510.0" />
+      <Button fx:id="search" layoutX="368.0" layoutY="510.0" mnemonicParsing="false" text="Tra cứu" />
+      <Button fx:id="home" layoutX="889.0" layoutY="29.0" mnemonicParsing="false" text="Home">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.XemDoiTuongController">
+   <children>
+      <TableView fx:id="userTable" layoutX="33.0" layoutY="42.0" prefHeight="250.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="userIDCol" prefWidth="163.2000732421875" text="UserID" />
+          <TableColumn fx:id="usernameCol" prefWidth="335.1999969482422" text="Username" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableTable" layoutX="515.0" layoutY="42.0" prefHeight="250.0" prefWidth="450.0">
+         <columns>
+            <TableColumn fx:id="tableIDCol" prefWidth="163.2000732421875" text="TableID" />
+            <TableColumn fx:id="tableNameCol" prefWidth="285.6000122070312" text="TableName" />
+         </columns>
+      </TableView>
+      <TableView fx:id="roleTable" layoutX="33.0" layoutY="330.0" prefHeight="250.0" prefWidth="450.0">
+         <columns>
+            <TableColumn fx:id="roleIDCol" prefWidth="163.2000732421875" text="RoleID" />
+            <TableColumn fx:id="roleCol" prefWidth="285.59999694824216" text="Role" />
+         </columns>
+      </TableView>
+      <TableView fx:id="viewTable" layoutX="515.0" layoutY="330.0" prefHeight="250.0" prefWidth="450.0">
+         <columns>
+            <TableColumn fx:id="viewIDCol" prefWidth="163.2000732421875" text="ViewID" />
+            <TableColumn fx:id="viewNameCol" prefWidth="282.4000244140625" text="ViewName" />
+         </columns>
+      </TableView>
+      <Label layoutX="215.0" layoutY="10.0" text="Danh sách user">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="695.0" layoutY="10.0" text="Danh sách bảng">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="298.0" text="Danh sách role">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="696.0" layoutY="298.0" text="Danh sách view">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="home" layoutX="913.0" layoutY="10.0" mnemonicParsing="false" text="HOME" />
+   </children>
+</AnchorPane>

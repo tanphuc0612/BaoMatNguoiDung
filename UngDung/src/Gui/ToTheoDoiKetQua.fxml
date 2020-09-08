@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.ToTheoDoiKetQuaController">
+   <children>
+      <Text layoutX="407.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổ theo dõi kết quả">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="home" layoutX="849.0" layoutY="28.0" mnemonicParsing="false" text="Home">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TabPane layoutX="-2.0" layoutY="94.0" prefHeight="481.0" prefWidth="1048.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Danh sách người đi bầu">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="452.0" prefWidth="1000.0">
+                     <children>
+                        <TableView fx:id="table1" layoutX="14.0" layoutY="-3.0" prefHeight="449.0" prefWidth="1047.0">
+                           <columns>
+                              <TableColumn fx:id="matv_col1" prefWidth="75.0" text="Mã TV" />
+                              <TableColumn fx:id="tentv_col1" prefWidth="282.0" text="Tên Tv" />
+                              <TableColumn fx:id="phai_col1" prefWidth="100.0" text="Phái" />
+                              <TableColumn fx:id="ngaysinh_col1" prefWidth="196.0" text="Ngày sinh" />
+                              <TableColumn fx:id="donvi_col1" minWidth="0.0" prefWidth="121.0" text="Đơn vị" />
+                              <TableColumn fx:id="tinhtrang_col1" prefWidth="299.0" text="Đã đi bầu" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Ứng cử viên">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table2" layoutY="55.0" prefHeight="398.0" prefWidth="1074.0">
+                           <columns>
+                              <TableColumn fx:id="matv_col2" prefWidth="75.0" text="Mã TV" />
+                              <TableColumn fx:id="tentv_col2" prefWidth="118.4000244140625" text="Tên Tv" />
+                              <TableColumn fx:id="phai_col2" prefWidth="113.60005187988281" text="Phái" />
+                              <TableColumn fx:id="ngaysinh_col2" prefWidth="173.5999755859375" text="Ngày sinh" />
+                              <TableColumn fx:id="sophieubau_col2" prefWidth="164.0" text="Số phiếu bầu" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

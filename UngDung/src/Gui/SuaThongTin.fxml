@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.SuaThongTinController">
+   <children>
+      <Text layoutX="101.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã" />
+      <TextField fx:id="ma" editable="false" layoutX="172.0" layoutY="102.0" />
+      <Text layoutX="98.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên" />
+      <TextField fx:id="ten" layoutX="173.0" layoutY="153.0" />
+      <Text layoutX="98.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phái" />
+      <Text layoutX="98.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày sinh" />
+      <ComboBox fx:id="phai" layoutX="172.0" layoutY="200.0" prefWidth="150.0" />
+      <Text layoutX="142.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sửa thông tin">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="ngaySinh" editable="false" layoutX="173.0" layoutY="253.0" prefHeight="26.0" prefWidth="149.0" />
+      <Text fx:id="tdonvi" layoutX="98.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đơn vị" />
+      <TextField fx:id="donvi" editable="false" layoutX="172.0" layoutY="303.0" />
+      <Button fx:id="dongy" layoutX="186.0" layoutY="376.0" mnemonicParsing="false" text="Đồng ý" />
+   </children>
+</AnchorPane>

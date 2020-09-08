@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/ElectionProject/UngDung/src/Entity/AuditView.java</file>
+            <file>file:/E:/ElectionProject/UngDung/src/Gui/BanToChucController.java</file>
+            <file>file:/E:/ElectionProject/UngDung/src/Gui/QuanTriHomeController.java</file>
+            <file>file:/E:/ElectionProject/UngDung/src/Gui/GrantRevokeRoleController.java</file>
+            <file>file:/E:/ElectionProject/UngDung/src/DAO/DAO.java</file>
+            <file>file:/E:/ElectionProject/UngDung/src/Gui/DiBauController.java</file>
+            <file>file:/E:/ElectionProject/UngDung/src/DAO/DBConnector.java</file>
+            <file>file:/E:/ElectionProject/UngDung/src/Gui/ThemDoiTuongController.java</file>
+            <file>file:/E:/ElectionProject/UngDung/src/Gui/GrantRevokeController.java</file>
+            <file>file:/E:/ElectionProject/UngDung/src/Gui/Audit.fxml</file>
+            <file>file:/E:/ElectionProject/UngDung/src/Gui/ToTheoDoiKetQuaController.java</file>
+            <file>file:/E:/ElectionProject/UngDung/src/Gui/AuditController.java</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AuditController">
+   <children>
+      <TableView fx:id="auditTable" layoutY="81.0" prefHeight="207.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="username" prefWidth="107.0" text="Username" />
+          <TableColumn fx:id="table" prefWidth="499.0" text="Query" />
+            <TableColumn fx:id="query" prefWidth="138.0" text="Table" />
+            <TableColumn fx:id="time" prefWidth="254.0" text="time" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnHome" layoutX="709.0" layoutY="14.0" mnemonicParsing="false" text="Home" />
+      <Button fx:id="btnEnable" layoutX="558.0" layoutY="353.0" mnemonicParsing="false" text="Enable" />
+      <Button fx:id="btnDisable" layoutX="442.0" layoutY="353.0" mnemonicParsing="false" text="Disable" />
+   </children>
+</AnchorPane>

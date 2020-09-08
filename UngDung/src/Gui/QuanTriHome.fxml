@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.QuanTriHomeController">
+   <children>
+      <Button layoutX="422.0" layoutY="52.0" mnemonicParsing="false" text="Xem đối tượng" fx:id="xemDoiTuong">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="themUserRole" layoutX="421.0" layoutY="121.0" mnemonicParsing="false" text="Thêm user/role">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="grantRevoke" layoutX="358.0" layoutY="192.0" mnemonicParsing="false" text="Grant/Revoke quyền trên bảng">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="388.0" layoutY="342.0" mnemonicParsing="false" text="Xem quyền của chủ thể" fx:id="xemQuyenChuThe">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="dangXuat" layoutX="447.0" layoutY="504.0" mnemonicParsing="false" text="Đăng xuất">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="audit" layoutX="400.0" layoutY="420.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="199.0" text="Nhật kí họat động">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="grantRevokeRole" layoutX="409.0" layoutY="270.0" mnemonicParsing="false" text="Grant/Revoke role">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
